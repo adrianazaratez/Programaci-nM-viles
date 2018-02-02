@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin">10dp</dimen>
+    <dimen name="textview_margin">5dp</dimen>
+    <dimen name="radiobutton_margin">70dp</dimen>
+
+</resources>
