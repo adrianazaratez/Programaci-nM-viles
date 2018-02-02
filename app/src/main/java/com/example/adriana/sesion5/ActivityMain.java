@@ -98,6 +98,7 @@ public class ActivityMain extends AppCompatActivity {
         }
         alumnos = new Alumnos(nombre.getText().toString(),telefono.getText().toString(),spinner.getSelectedItem().toString(),gender,libro.getText().toString(),x);
         Toast.makeText(this, alumnos.toString(), Toast.LENGTH_LONG).show();
+        clean();
     }
 
    public void createDialog(){
