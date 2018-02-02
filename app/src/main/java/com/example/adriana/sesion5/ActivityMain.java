@@ -105,22 +105,27 @@ public class ActivityMain extends AppCompatActivity {
         dialog.setMessage("¿Desea limpiar el contenido?").setCancelable(true).setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                nombre.setText(null);
-                telefono.setText(null);
-                spinner.setSelection(0);
-                generoF.setChecked(true);
-                generoM.setChecked(false);
-                libro.setText(null);
-                deporte.setChecked(false);
+
             }
         }).setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-
+                clean();
             }
         });
         AlertDialog alert = dialog.create();
         alert.show();
    }
+
+   public void clean(){
+       nombre.setText(null);
+       telefono.setText(null);
+       spinner.setSelection(0);
+       generoF.setChecked(true);
+       generoM.setChecked(false);
+       libro.setText(null);
+       deporte.setChecked(false);
+   }
+
 
 }
